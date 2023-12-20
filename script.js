@@ -47,6 +47,9 @@ function pow(num, degree) {
   if (num === 0 && degree === 0) {
     return "Маємо невизнченність";
   }
+  if (num === 0) {
+    return 0;
+  }
   if (degree === 0) {
     return 1;
   }
@@ -64,8 +67,9 @@ btn.addEventListener("click", (_) => {
   if (num === undefined) {
     return;
   }
+  console.log(num)
   const degree = getDegree();
-  if (degree === null) {
+  if (degree === undefined) {
     return;
   }
   const res = pow(num, degree);
