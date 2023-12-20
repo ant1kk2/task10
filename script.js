@@ -1,4 +1,4 @@
-const getNum = (val) => {
+function getNum(val) {
   const num = prompt("Введіть число", val);
   if (num === null) {
     alert("OK. Bye)");
@@ -18,9 +18,9 @@ const getNum = (val) => {
     return getNum(num);
   }
   return +num;
-};
+}
 
-const getDegree = (val) => {
+function getDegree(val) {
   const num = prompt("Введіть ступінь", val);
   if (num === null) {
     alert("OK. Bye)");
@@ -41,11 +41,11 @@ const getDegree = (val) => {
     return getDegree(num);
   }
   return +num;
-};
+}
 
 function pow(num, degree) {
-  if (num === 0 && degree === 0){
-    return "Маємо невизнченність"
+  if (num === 0 && degree === 0) {
+    return "Маємо невизнченність";
   }
   if (degree === 0) {
     return 1;
