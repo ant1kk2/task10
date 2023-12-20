@@ -67,7 +67,6 @@ btn.addEventListener("click", (_) => {
   if (num === undefined) {
     return;
   }
-  console.log(num)
   const degree = getDegree();
   if (degree === undefined) {
     return;
