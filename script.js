@@ -47,6 +47,9 @@ function pow(num, degree) {
   if (num === 0 && degree === 0) {
     return "Маємо невизнченність";
   }
+  if (num === 0 && degree < 0) {
+    return "Infinity"
+  }
   if (num === 0) {
     return 0;
   }
